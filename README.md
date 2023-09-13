@@ -19,7 +19,7 @@ For more information about the application or its development, you can reach out
 
 [GitHub](https://github.com/Vadum-cmd)
 
-[Gmail](vadym.treskot@lnu.edu.ua)
+Gmail: vadym.treskot@lnu.edu.ua
 
 ## Useful links
 You can track the progress of the project here:
