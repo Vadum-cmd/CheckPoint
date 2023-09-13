@@ -24,6 +24,6 @@ For more information about the application or its development, you can reach out
 ## Useful links
 You can track the progress of the project here:
 
-[Table]()
+[Table](https://github.com/users/Vadum-cmd/projects/2)
 
 [Presentation]()
