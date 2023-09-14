@@ -1,5 +1,7 @@
 # CheckPoint
 ## The goal
+To create an application for store or supermarket workers (mainly cashiers, administrators and managers) that will be easy 
+to use and have more advanced but still user-friendly interface.
 
 ## Plans for the future
 The development of our project started on September 13, 2023, but our goal is to release the project by the end of the year!  
