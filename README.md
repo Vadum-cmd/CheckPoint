@@ -6,10 +6,15 @@ The development of our project started on September 13, 2023, but our goal is to
 
 ## Team
 The project development team includes:
+
 Rostyslav Baranovskyi
+
 Oleksandr Vlasiuk
+
 Vadym Treskot
+
 Vasyl Yatsyshyn
+
 All participants are part of the "iHateMonday" team.
 
 ## Contact info
