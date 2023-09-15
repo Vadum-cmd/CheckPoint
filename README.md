@@ -33,4 +33,4 @@ You can track the progress of the project here:
 
 [Table](https://github.com/users/Vadum-cmd/projects/2)
 
-[Presentation]()
+[Presentation](https://github.com/Vadum-cmd/CheckPoint/blob/main/documents/Check.pdf)
