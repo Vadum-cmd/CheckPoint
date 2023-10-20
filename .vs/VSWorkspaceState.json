@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\db"
+    "\\DataBase",
+    "\\DataBase\\Connection",
+    "\\DataBase\\Connection\\Connection"
   ],
+  "SelectedNode": "\\DataBase\\Connection\\Connection\\scriptToGenerateDB.sql",
   "PreviewInSolutionExplorer": false
 }

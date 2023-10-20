@@ -80,3 +80,4 @@ C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\DataBase\Connection\Connection
 C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\DataBase\Connection\Connection\obj\Debug\Connection.csproj.CopyComplete
 C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\DataBase\Connection\Connection\obj\Debug\Connection.exe
 C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\DataBase\Connection\Connection\obj\Debug\Connection.pdb
+B:\CheckPoint\DataBase\Connection\Connection\bin\Debug\scriptToGenerateDB.sql

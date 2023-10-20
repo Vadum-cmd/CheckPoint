@@ -2,6 +2,7 @@
 using MySql.Data.MySqlClient;
 using System.Configuration;
 using System.Runtime.Remoting.Messaging;
+using System.IO;
 
 namespace Connection
 {
@@ -13,6 +14,9 @@ namespace Connection
             string theConnectionString = ConfigurationManager.ConnectionStrings["MainConnection"].ToString();
             MySqlConnection connection = new MySqlConnection(theConnectionString);
 
+            var scriptPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "scriptToGenerateDB.sql");
+            string sqlScript = File.ReadAllText(scriptPath);
+
             try
             {
                 connection.Open();
@@ -21,6 +25,10 @@ namespace Connection
                     Console.WriteLine("Connected to database.");
                     Console.WriteLine("Press any key to proceed...");
                 }
+
+                MySqlCommand command = new MySqlCommand(sqlScript, connection);
+                command.ExecuteNonQuery();
+                Console.WriteLine("Database created successfully!");
 
                 bool running = true;
                 while (running)
@@ -60,6 +68,11 @@ namespace Connection
             {
                 Console.WriteLine("Error: " + ex.Message);
                 Console.ReadKey();
+            }
+            finally
+            {
+                connection.Close();
+                Console.WriteLine("Connection closed.");
             }
         }
         public static void GetTable(MySqlConnection connection, String tableName)
