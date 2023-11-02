@@ -1,0 +1,16 @@
+B:\CheckPoint\App\DAL\bin\Debug\net7.0-windows\DAL.dll.config
+B:\CheckPoint\App\DAL\bin\Debug\net7.0-windows\DAL.deps.json
+B:\CheckPoint\App\DAL\bin\Debug\net7.0-windows\DAL.runtimeconfig.json
+B:\CheckPoint\App\DAL\bin\Debug\net7.0-windows\DAL.dll
+B:\CheckPoint\App\DAL\bin\Debug\net7.0-windows\DAL.pdb
+B:\CheckPoint\App\DAL\obj\Debug\net7.0-windows\DAL.csproj.AssemblyReference.cache
+B:\CheckPoint\App\DAL\obj\Debug\net7.0-windows\DAL.GeneratedMSBuildEditorConfig.editorconfig
+B:\CheckPoint\App\DAL\obj\Debug\net7.0-windows\DAL.AssemblyInfoInputs.cache
+B:\CheckPoint\App\DAL\obj\Debug\net7.0-windows\DAL.AssemblyInfo.cs
+B:\CheckPoint\App\DAL\obj\Debug\net7.0-windows\DAL.csproj.CoreCompileInputs.cache
+B:\CheckPoint\App\DAL\obj\Debug\net7.0-windows\DAL.dll
+B:\CheckPoint\App\DAL\obj\Debug\net7.0-windows\refint\DAL.dll
+B:\CheckPoint\App\DAL\obj\Debug\net7.0-windows\DAL.pdb
+B:\CheckPoint\App\DAL\obj\Debug\net7.0-windows\DAL.genruntimeconfig.cache
+B:\CheckPoint\App\DAL\obj\Debug\net7.0-windows\ref\DAL.dll
+B:\CheckPoint\App\DAL\bin\Debug\net7.0-windows\App.config

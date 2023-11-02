@@ -1,0 +1,11 @@
+B:\CheckPoint\App\BLL\bin\Debug\net7.0-windows\BLL.deps.json
+B:\CheckPoint\App\BLL\bin\Debug\net7.0-windows\BLL.dll
+B:\CheckPoint\App\BLL\bin\Debug\net7.0-windows\BLL.pdb
+B:\CheckPoint\App\BLL\obj\Debug\net7.0-windows\BLL.GeneratedMSBuildEditorConfig.editorconfig
+B:\CheckPoint\App\BLL\obj\Debug\net7.0-windows\BLL.AssemblyInfoInputs.cache
+B:\CheckPoint\App\BLL\obj\Debug\net7.0-windows\BLL.AssemblyInfo.cs
+B:\CheckPoint\App\BLL\obj\Debug\net7.0-windows\BLL.csproj.CoreCompileInputs.cache
+B:\CheckPoint\App\BLL\obj\Debug\net7.0-windows\BLL.dll
+B:\CheckPoint\App\BLL\obj\Debug\net7.0-windows\refint\BLL.dll
+B:\CheckPoint\App\BLL\obj\Debug\net7.0-windows\BLL.pdb
+B:\CheckPoint\App\BLL\obj\Debug\net7.0-windows\ref\BLL.dll
