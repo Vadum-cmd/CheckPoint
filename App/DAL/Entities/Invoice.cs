@@ -8,7 +8,7 @@ namespace DAL.Entities
 {
     public class Invoice
     {
-        public required int Id { get; set; }
+        public int Id { get; set; }
         public required DateTime DateOf { get; set; }
         public required string Provider { get; set; }
         public required int TotalPrice { get; set; }

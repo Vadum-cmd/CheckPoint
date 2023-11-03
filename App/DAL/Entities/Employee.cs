@@ -16,7 +16,7 @@ namespace DAL.Entities
         public required string Login { get; set; }
         public required string Password { get; set; }
 
-        public int EmployeePermissionId { get; set; }
+        public required int EmployeePermissionId { get; set; }
         public required EmployeePermission EmployeePermission { get; set; }
 
         public IList<EmployeeSession>? EmployeeSessions { get; set; }
