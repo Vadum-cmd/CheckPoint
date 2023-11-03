@@ -9,8 +9,8 @@ namespace DAL.Entities
     public class Receipt
     {
         public int Id { get; set; }
-        public float TotalPrice { get; set; }
-        public DateTime DateOf { get; set; }
+        public required float TotalPrice { get; set; }
+        public required DateTime DateOf { get; set; }
 
         public required IList<ProductReceipt> ProductReceipts { get; set; }
     }
