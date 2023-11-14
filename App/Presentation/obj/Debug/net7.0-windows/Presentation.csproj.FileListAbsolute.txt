@@ -77,8 +77,6 @@ B:\CheckPoint\App\Presentation\bin\Debug\net7.0-windows\DAL.pdb
 B:\CheckPoint\App\Presentation\bin\Debug\net7.0-windows\DAL.dll.config
 B:\CheckPoint\App\Presentation\bin\Debug\net7.0-windows\App.config
 C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Presentation.csproj.AssemblyReference.cache
-C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\LoginForm.g.cs
-C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\MainWindow.g.cs
 C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\App.g.cs
 C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Presentation_MarkupCompile.cache
 C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Presentation_MarkupCompile.lref
@@ -146,8 +144,6 @@ C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\bin\Debug\net7.0-
 C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\bin\Debug\net7.0-windows\BLL.pdb
 C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\bin\Debug\net7.0-windows\DAL.pdb
 C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\bin\Debug\net7.0-windows\DAL.dll.config
-C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\LoginForm.baml
-C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\MainWindow.baml
 C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Presentation.g.resources
 C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Presentation.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Presentation.AssemblyInfoInputs.cache
@@ -156,3 +152,11 @@ C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-
 C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Presentation.csproj.CopyComplete
 C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Presentation.genruntimeconfig.cache
 C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\ref\Presentation.dll
+C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Styles\ButtonStyles.baml
+C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Styles\UIColors.baml
+C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Views\LoginView.g.cs
+C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Views\MainView.g.cs
+C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\bin\Debug\net7.0-windows\FontAwesome.Sharp.dll
+C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\App.baml
+C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Views\LoginView.baml
+C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Views\MainView.baml

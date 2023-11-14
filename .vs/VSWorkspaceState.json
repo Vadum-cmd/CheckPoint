@@ -3,8 +3,10 @@
     "",
     "\\App",
     "\\App\\BLL",
+    "\\App\\DAL",
+    "\\App\\DAL\\Entities",
     "\\documents"
   ],
-  "SelectedNode": "\\App\\BLL\\BLL.csproj",
+  "SelectedNode": "\\App\\DAL\\Entities\\ProductInvoice.cs",
   "PreviewInSolutionExplorer": false
 }

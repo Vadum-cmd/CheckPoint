@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "IoOAPSNBFBxmCCi9/TTZiLYJXnvXvNwbgQNMA5+CDpgV/pampDSU/R3GTCeCXCfvuk7eOoJFYRAeViqyNyMcxQ==",
+  "dgSpecHash": "E8V3T3CTmRFN1F2CVFMOitxRyOyVIEnzt+1KIRM/So8u1nD4nKfNqaqFUwHI1p5apIDGasgfUBa9QX4Pp2yLgA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\My\\Source\\Repos\\Vadum-cmd\\CheckPoint\\App\\Presentation\\Presentation.csproj",
+  "projectFilePath": "C:\\Users\\My\\source\\repos\\Vadum-cmd\\CheckPoint\\App\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\My\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\My\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\My\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\My\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512",
     "C:\\Users\\My\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\My\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\My\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

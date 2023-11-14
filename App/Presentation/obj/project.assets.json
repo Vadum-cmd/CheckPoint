@@ -76,6 +76,18 @@
           "buildTransitive/netcoreapp3.0/EntityFramework.targets": {}
         }
       },
+      "FontAwesome.Sharp/6.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/FontAwesome.Sharp.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/FontAwesome.Sharp.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ]
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -1335,6 +1347,21 @@
         "tools/netcoreapp3.0/any/ef6.dll",
         "tools/netcoreapp3.0/any/ef6.pdb",
         "tools/netcoreapp3.0/any/ef6.runtimeconfig.json"
+      ]
+    },
+    "FontAwesome.Sharp/6.3.0": {
+      "sha512": "3/Fb0N04yYK8An07oox5ISlUyNgsnWildHfoP69uqTEOsemQemRyciphMkXZOcdBupjUD+lVsRE3FqG41/dzPA==",
+      "type": "package",
+      "path": "fontawesome.sharp/6.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fontawesome.sharp.6.3.0.nupkg.sha512",
+        "fontawesome.sharp.nuspec",
+        "lib/net472/FontAwesome.Sharp.dll",
+        "lib/net48/FontAwesome.Sharp.dll",
+        "lib/net6.0-windows7.0/FontAwesome.Sharp.dll",
+        "lib/netcoreapp3.1/FontAwesome.Sharp.dll"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -3441,6 +3468,7 @@
       "BLL >= 1.0.0",
       "DAL >= 1.0.0",
       "EntityFramework >= 6.4.4",
+      "FontAwesome.Sharp >= 6.3.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.13"
     ]
   },
@@ -3450,11 +3478,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\My\\Source\\Repos\\Vadum-cmd\\CheckPoint\\App\\Presentation\\Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\My\\source\\repos\\Vadum-cmd\\CheckPoint\\App\\Presentation\\Presentation.csproj",
       "projectName": "Presentation",
-      "projectPath": "C:\\Users\\My\\Source\\Repos\\Vadum-cmd\\CheckPoint\\App\\Presentation\\Presentation.csproj",
+      "projectPath": "C:\\Users\\My\\source\\repos\\Vadum-cmd\\CheckPoint\\App\\Presentation\\Presentation.csproj",
       "packagesPath": "C:\\Users\\My\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\My\\Source\\Repos\\Vadum-cmd\\CheckPoint\\App\\Presentation\\obj\\",
+      "outputPath": "C:\\Users\\My\\source\\repos\\Vadum-cmd\\CheckPoint\\App\\Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\My\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3471,11 +3499,11 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\My\\Source\\Repos\\Vadum-cmd\\CheckPoint\\App\\BLL\\BLL.csproj": {
-              "projectPath": "C:\\Users\\My\\Source\\Repos\\Vadum-cmd\\CheckPoint\\App\\BLL\\BLL.csproj"
+            "C:\\Users\\My\\source\\repos\\Vadum-cmd\\CheckPoint\\App\\BLL\\BLL.csproj": {
+              "projectPath": "C:\\Users\\My\\source\\repos\\Vadum-cmd\\CheckPoint\\App\\BLL\\BLL.csproj"
             },
-            "C:\\Users\\My\\Source\\Repos\\Vadum-cmd\\CheckPoint\\App\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\My\\Source\\Repos\\Vadum-cmd\\CheckPoint\\App\\DAL\\DAL.csproj"
+            "C:\\Users\\My\\source\\repos\\Vadum-cmd\\CheckPoint\\App\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\My\\source\\repos\\Vadum-cmd\\CheckPoint\\App\\DAL\\DAL.csproj"
             }
           }
         }
@@ -3493,6 +3521,10 @@
           "EntityFramework": {
             "target": "Package",
             "version": "[6.4.4, )"
+          },
+          "FontAwesome.Sharp": {
+            "target": "Package",
+            "version": "[6.3.0, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
