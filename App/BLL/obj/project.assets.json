@@ -8,24 +8,19 @@
     "net7.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Rostyslav\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\My\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "B:\\CheckPoint\\App\\BLL\\BLL.csproj",
+      "projectUniqueName": "C:\\Users\\My\\Source\\Repos\\Vadum-cmd\\CheckPoint\\App\\BLL\\BLL.csproj",
       "projectName": "BLL",
-      "projectPath": "B:\\CheckPoint\\App\\BLL\\BLL.csproj",
-      "packagesPath": "C:\\Users\\Rostyslav\\.nuget\\packages\\",
-      "outputPath": "B:\\CheckPoint\\App\\BLL\\obj\\",
+      "projectPath": "C:\\Users\\My\\Source\\Repos\\Vadum-cmd\\CheckPoint\\App\\BLL\\BLL.csproj",
+      "packagesPath": "C:\\Users\\My\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\My\\Source\\Repos\\Vadum-cmd\\CheckPoint\\App\\BLL\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Rostyslav\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\My\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

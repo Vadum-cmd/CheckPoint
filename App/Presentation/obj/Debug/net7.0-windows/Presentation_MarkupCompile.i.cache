@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-B:\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\
+C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\
 Presentation
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-B:\CheckPoint\App\Presentation\App.xaml
-11407045341
+C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\Presentation\App.xaml
+2-874545204
 
-5-288624174
-234645076951
-MainWindow.xaml;
+6-442501615
+234-1195940154
+LoginForm.xaml;MainWindow.xaml;
 
 True
 

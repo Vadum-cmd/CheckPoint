@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\back-image2.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
     <Folder Include="Views\" />
@@ -24,6 +28,10 @@
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj" />
     <ProjectReference Include="..\DAL\DAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\back-image2.jpg" />
   </ItemGroup>
 
 </Project>
