@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Presentation.Views"
-   
+        xmlns:viewModel="clr-namespace:Presentation.ViewModels" 
         xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
         mc:Ignorable="d"
         Title="MainWindowView" Height="700" Width="1300"
@@ -14,6 +14,19 @@
         AllowsTransparency="True">
 
 
+    <!--<Window.DataContext>
+        <viewModel:MainViewModel/>
+    </Window.DataContext>-->
+    <Window.Resources>
+        
+        <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
+            <local:HomeView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:CustomerViewModel}">
+            <local:CustomerView/>
+        </DataTemplate>
+
+    </Window.Resources>
 
     <Border CornerRadius="10"                    
             BorderThickness="1">

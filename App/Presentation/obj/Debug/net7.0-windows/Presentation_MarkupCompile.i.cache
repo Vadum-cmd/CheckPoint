@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\App.xaml
-41911944979
+6283739943
 
-7-1266982450
+131615889198
 243703379643
-Styles\ButtonStyles.xaml;Styles\UIColors.xaml;Views\LoginView.xaml;Views\MainView.xaml;
+Styles\ButtonStyles.xaml;Styles\UIColors.xaml;Views\CustomerView.xaml;Views\HomeView.xaml;Views\LoginView.xaml;Views\MainView.xaml;
 
-False
+True
 

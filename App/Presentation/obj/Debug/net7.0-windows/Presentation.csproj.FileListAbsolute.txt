@@ -160,3 +160,6 @@ C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\bin\Debug\net7.0-
 C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\App.baml
 C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Views\LoginView.baml
 C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Views\MainView.baml
+C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Views\CustomerView.g.cs
+C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Views\HomeView.g.cs
+C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
