@@ -3,7 +3,7 @@ using System.Windows.Input;
 
 public class MainViewModel : ViewModelBase
 {
-    //Fields
+    ////Fields
     //private UserAccountModel _currentUserAccount;
     //private ViewModelBase _currentChildView;
     //private string _caption;

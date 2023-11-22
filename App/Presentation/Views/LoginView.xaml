@@ -85,7 +85,7 @@
                             FontFamily="Montserrat"
                             Cursor="Hand"
                             Grid.Column="2"
-                            Click="btnClose_Click" Height="30" VerticalAlignment="Top">
+                            Click="btnClose_Click">
                         <Button.Style>
                             <Style TargetType="Button">
                                 <Setter Property="Background" Value="#526534"/>

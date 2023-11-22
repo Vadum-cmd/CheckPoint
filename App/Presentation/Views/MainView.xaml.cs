@@ -52,5 +52,11 @@ namespace Presentation.Views
                 this.WindowState = WindowState.Maximized;
             else this.WindowState = WindowState.Normal;
         }
+
+        private void btnCloseMain_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
     }
 }

@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:viewModel="clr-namespace:Presentation.ViewModels" 
+
         xmlns:local="clr-namespace:Presentation.Views"
 
         xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
@@ -15,7 +15,7 @@
         AllowsTransparency="True">
 
 
-    <Window.DataContext>
+    <!--<Window.DataContext>
         <viewModel:MainViewModel/>
     </Window.DataContext>
     <Window.Resources>
@@ -27,7 +27,7 @@
             <local:CustomerView/>
         </DataTemplate>
 
-    </Window.Resources>
+    </Window.Resources>-->
 
     <Border CornerRadius="10"                    
             BorderThickness="1">
@@ -76,16 +76,40 @@
                                  IsChecked="True"
                                  Command="{Binding ShowHomeViewCommand}">
                         <StackPanel Orientation="Horizontal">
-                            <fa:IconImage Icon="Home" Style="{StaticResource menuButtonIcon}"/>
-                            <TextBlock Text="Dashboard" Style="{StaticResource menuButtonText}"/>
+                            
+                            <TextBlock Text="Products" Style="{StaticResource menuButtonText}" Margin="20,0,0,0"/>
                         </StackPanel>
                     </RadioButton>
                     <RadioButton Style="{StaticResource menuButton}"
                                  Tag="{StaticResource color2}"
                                  Command="{Binding ShowCustomerViewCommand}">
                         <StackPanel Orientation="Horizontal">
-                            <fa:IconImage Icon="UserGroup" Style="{StaticResource menuButtonIcon}"/>
-                            <TextBlock Text="Customers" Style="{StaticResource menuButtonText}"/>
+
+                            <TextBlock Text="Invoices" Style="{StaticResource menuButtonText}" Margin="20,0,0,0"/>
+                        </StackPanel>
+                    </RadioButton>
+                    <RadioButton Style="{StaticResource menuButton}"
+                                 Tag="{StaticResource color2}"
+                                 Command="{Binding ShowCustomerViewCommand}">
+                        <StackPanel Orientation="Horizontal">
+
+                            <TextBlock Text="Receipts" Style="{StaticResource menuButtonText}" Margin="20,0,0,0"/>
+                        </StackPanel>
+                    </RadioButton>
+                    <RadioButton Style="{StaticResource menuButton}"
+                                 Tag="{StaticResource color2}"
+                                 Command="{Binding ShowCustomerViewCommand}">
+                        <StackPanel Orientation="Horizontal">
+
+                            <TextBlock Text="Sale statistic" Style="{StaticResource menuButtonText}" Margin="20,0,0,0"/>
+                        </StackPanel>
+                    </RadioButton>
+                    <RadioButton Style="{StaticResource menuButton}"
+                                 Tag="{StaticResource color2}"
+                                 Command="{Binding ShowCustomerViewCommand}">
+                        <StackPanel Orientation="Horizontal">
+
+                            <TextBlock Text="Your activity" Style="{StaticResource menuButtonText}" Margin="20,0,0,0"/>
                         </StackPanel>
                     </RadioButton>
                 </StackPanel>
@@ -124,19 +148,18 @@
                                 Style="{StaticResource controlButton}"
                                 Tag="{StaticResource color4}"
                                 Click="btnClose_Click">
-                            <fa:IconImage Icon="Xmark" Style="{StaticResource controlButtonIcon}"/>
+
                         </Button>
                         <Button x:Name="btnMaximize"
                                 Style="{StaticResource controlButton}"
                                 Tag="{StaticResource color6}"
                                 Click="btnMaximize_Click">
-                            <fa:IconImage Icon="Square" Style="{StaticResource controlButtonIcon}"/>
+
                         </Button>
                         <Button x:Name="btnMinimize"
                                 Style="{StaticResource controlButton}"
                                 Tag="{StaticResource color8}"
                                 Click="btnMinimize_Click">
-                            <fa:IconImage Icon="WindowMinimize" Width="12" Style="{StaticResource controlButtonIcon}"/>
                         </Button>
                     </StackPanel>
                     <!--Header / Caption-->
@@ -150,11 +173,7 @@
                         <StackPanel Grid.Column="0"
                                     Orientation="Horizontal"
                                     VerticalAlignment="Center">
-                            <fa:IconImage Icon="{Binding Icon}"
-                                          Height="20"
-                                          Width="20"
-                                          Foreground="{StaticResource titleColor2}"
-                                          Margin="35,0,10,0"/>
+
 
                             <TextBlock Text="{Binding Caption}"
                                        Foreground="{StaticResource titleColor2}"
@@ -170,11 +189,13 @@
                                     FlowDirection="RightToLeft"
                                     VerticalAlignment="Center"
                                     Margin="0,0,10,0">
-                            <Button Style="{StaticResource iconButton}"
-                                    Tag="{StaticResource color1}">
-                                <fa:IconImage Icon="AngleDown"
-                                              Height="12" Width="12"
-                                              Style="{StaticResource iconButtonIcon}"/>
+                            <Button x:Name="btnCloseMain" Style="{StaticResource iconButton}"
+                                    Tag="{StaticResource color1}" Click="btnCloseMain_Click">
+                                <TextBlock Text="x" Style="{StaticResource menuButtonText}"  />
+                            </Button>
+                            <Button x:Name="btnMinimizeMain" Style="{StaticResource iconButton}"
+                                    Tag="{StaticResource color1}" Click="btnMinimize_Click">
+                                <TextBlock x:Name="btnMinimize1" Text="-" Style="{StaticResource menuButtonText}"  />
                             </Button>
                             <TextBlock Text="{Binding CurrentUserAccount.DisplayName}"
                                        Foreground="{StaticResource titleColor3}"
@@ -189,17 +210,14 @@
                                     <ImageBrush ImageSource="/Images/profile-picture.jpg"/>
                                 </Ellipse.Fill>
                             </Ellipse>
+
                             <Button Style="{StaticResource iconButton}"
-                                    Tag="{StaticResource color3}">
-                                <fa:IconImage Icon="Clock" Style="{StaticResource iconButtonIcon}"/>
+                                    Tag="{StaticResource color1}" Width="93">
+                                <TextBlock Text="Log out" Style="{StaticResource menuButtonText}"  />
                             </Button>
                             <Button Style="{StaticResource iconButton}"
-                                    Tag="{StaticResource color4}">
-                                <fa:IconImage Icon="Envelope" Style="{StaticResource iconButtonIcon}"/>
-                            </Button>
-                            <Button Style="{StaticResource iconButton}"
-                                    Tag="{StaticResource color5}">
-                                <fa:IconImage Icon="Bell" Style="{StaticResource iconButtonIcon}"/>
+                                    Tag="{StaticResource color5}" Width="122">
+                                <TextBlock Text="Switch account" Style="{StaticResource menuButtonText}"   />
                             </Button>
                         </StackPanel>
 

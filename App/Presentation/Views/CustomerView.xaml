@@ -45,7 +45,7 @@
                     VerticalAlignment="Top">
                 <Button.Style>
                     <Style TargetType="Button">
-                        <Setter Property="Background" Value="#773DFF"/>
+                        <Setter Property="Background" Value="Green"/>
                         <Setter Property="Template">
                             <Setter.Value>
                                 <ControlTemplate TargetType="Button">
@@ -60,7 +60,7 @@
                         </Setter>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="#836EFB"/>
+                                <Setter Property="Background" Value="DarkGreen"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -68,11 +68,11 @@
             </Button>
         </Grid>
         <Border Grid.Row="1"
-                Background="#200F53"
+                Background="DarkSeaGreen"
                 CornerRadius="10" 
                 Padding="10">
             <DataGrid ColumnWidth="*"
-                  Background="#200F53"
+                  Background="OliveDrab"
                   BorderThickness="0">
                 <DataGrid.ColumnHeaderStyle>
                     <Style TargetType="DataGridColumnHeader">

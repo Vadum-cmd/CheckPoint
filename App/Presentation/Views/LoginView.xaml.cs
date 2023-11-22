@@ -42,7 +42,8 @@ namespace Presentation.Views
         }
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-
+            var mainView = new MainView();
+            mainView.Show();
         }
     }
 }

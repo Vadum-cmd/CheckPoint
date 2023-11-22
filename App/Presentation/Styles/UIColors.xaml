@@ -30,7 +30,7 @@
     <SolidColorBrush x:Key = "plainTextColor3" Color = "White" />
     <!--Панель кольорів-->
     <SolidColorBrush x:Key = "panelColor" Color = "#81a163" />
-    <SolidColorBrush x:Key = "panelOverColor" Color = "White" />
+    <SolidColorBrush x:Key = "panelOverColor" Color = "DarkGreen" />
     <SolidColorBrush x:Key = "panelActiveColor" Color = "#567452" />
 
 </ResourceDictionary>
