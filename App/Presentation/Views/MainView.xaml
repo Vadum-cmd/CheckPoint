@@ -20,10 +20,19 @@
     <Window.Resources>
         
         <DataTemplate DataType="{x:Type viewModel:ProductsViewModel}">
-            <local:/>
+            <local:ProductView/>
         </DataTemplate>
-        <DataTemplate DataType="{x:Type viewModel:CustomerViewModel}">
-            <local:CustomerView/>
+        <DataTemplate DataType="{x:Type viewModel:InvoicesViewModel}">
+            <local:InvoicesView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:ReceiptsViewModel}">
+            <local:UserReceipts/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:SaleStatisticViewModel}">
+            <local:SaleStatisticView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:ActivityViewModel}">
+            <local:ActivityView/>
         </DataTemplate>
 
     </Window.Resources>
@@ -73,7 +82,7 @@
                     <RadioButton Style="{StaticResource menuButton}"
                                  Tag="{StaticResource color1}"
                                  IsChecked="True"
-                                 Command="{Binding ShowHomeViewCommand}">
+                                 Command="{Binding ShowProductsViewCommand}">
                         <StackPanel Orientation="Horizontal">
                             
                             <TextBlock Text="Products" Style="{StaticResource menuButtonText}" Margin="20,0,0,0"/>
@@ -81,7 +90,7 @@
                     </RadioButton>
                     <RadioButton Style="{StaticResource menuButton}"
                                  Tag="{StaticResource color2}"
-                                 Command="{Binding ShowCustomerViewCommand}">
+                                 Command="{Binding ShowInvoicesViewCommand}">
                         <StackPanel Orientation="Horizontal">
 
                             <TextBlock Text="Invoices" Style="{StaticResource menuButtonText}" Margin="20,0,0,0"/>
@@ -89,7 +98,7 @@
                     </RadioButton>
                     <RadioButton Style="{StaticResource menuButton}"
                                  Tag="{StaticResource color2}"
-                                 Command="{Binding ShowCustomerViewCommand}">
+                                 Command="{Binding ShowReceiptsViewCommand}">
                         <StackPanel Orientation="Horizontal">
 
                             <TextBlock Text="Receipts" Style="{StaticResource menuButtonText}" Margin="20,0,0,0"/>
@@ -97,7 +106,7 @@
                     </RadioButton>
                     <RadioButton Style="{StaticResource menuButton}"
                                  Tag="{StaticResource color2}"
-                                 Command="{Binding ShowCustomerViewCommand}">
+                                 Command="{Binding ShowSaleStatisticViewCommand}">
                         <StackPanel Orientation="Horizontal">
 
                             <TextBlock Text="Sale statistic" Style="{StaticResource menuButtonText}" Margin="20,0,0,0"/>
@@ -105,7 +114,7 @@
                     </RadioButton>
                     <RadioButton Style="{StaticResource menuButton}"
                                  Tag="{StaticResource color2}"
-                                 Command="{Binding ShowCustomerViewCommand}">
+                                 Command="{Binding ShowActivityViewCommand}">
                         <StackPanel Orientation="Horizontal">
 
                             <TextBlock Text="Your activity" Style="{StaticResource menuButtonText}" Margin="20,0,0,0"/>
