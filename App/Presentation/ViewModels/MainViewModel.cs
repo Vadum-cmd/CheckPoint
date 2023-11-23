@@ -1,103 +1,98 @@
 ﻿using FontAwesome.Sharp;
+using Presentation.ViewModels;
 using System.Windows.Input;
 
-public class MainViewModel : ViewModelBase
-{
-    ////Fields
-    //private UserAccountModel _currentUserAccount;
-    //private ViewModelBase _currentChildView;
-    //private string _caption;
-    //private IconChar _icon;
+namespace Presentation.ViewModels {
+    public class MainViewModel : ViewModelBase
+    {
+        //Fields
+        private ViewModelBase _currentChildView;
+        private string _caption;
 
-    //private IUserRepository userRepository;
 
-    ////Properties
-    //public UserAccountModel CurrentUserAccount
-    //{
-    //    get
-    //    {
-    //        return _currentUserAccount;
-    //    }
+        //Properties
 
-    //    set
-    //    {
-    //        _currentUserAccount = value;
-    //        OnPropertyChanged(nameof(CurrentUserAccount));
-    //    }
-    //}
+        public ViewModelBase CurrentChildView
+        {
+            get
+            {
+                return _currentChildView;
+            }
 
-    //public ViewModelBase CurrentChildView
-    //{
-    //    get
-    //    {
-    //        return _currentChildView;
-    //    }
+            set
+            {
+                _currentChildView = value;
+                OnPropertyChanged(nameof(CurrentChildView));
+            }
+        }
 
-    //    set
-    //    {
-    //        _currentChildView = value;
-    //        OnPropertyChanged(nameof(CurrentChildView));
-    //    }
-    //}
+        public string Caption
+        {
+            get
+            {
+                return _caption;
+            }
 
-    //public string Caption
-    //{
-    //    get
-    //    {
-    //        return _caption;
-    //    }
+            set
+            {
+                _caption = value;
+                OnPropertyChanged(nameof(Caption));
+            }
+        }
 
-    //    set
-    //    {
-    //        _caption = value;
-    //        OnPropertyChanged(nameof(Caption));
-    //    }
-    //}
 
-    //public IconChar Icon
-    //{
-    //    get
-    //    {
-    //        return _icon;
-    //    }
+        //--> Commands
+        public ICommand ShowProductsViewCommand { get; }
+        public ICommand ShowInvoicesViewCommand { get; }
+        public ICommand ShowSaleStatisticViewCommand { get; }
+        public ICommand ShowReceiptsViewCommand { get; }
+        public ICommand ShowActivityViewCommand { get; }
 
-    //    set
-    //    {
-    //        _icon = value;
-    //        OnPropertyChanged(nameof(Icon));
-    //    }
-    //}
+        public MainViewModel()
+        {
 
-    ////--> Commands
-    //public ICommand ShowHomeViewCommand { get; }
-    //public ICommand ShowCustomerViewCommand { get; }
+            //Initialize commands
+            ShowProductsViewCommand = new ViewModelCommand(ExecuteShowProductsViewCommand);
+            ShowInvoicesViewCommand = new ViewModelCommand(ExecuteShowInvoicesViewCommand);
+            ShowReceiptsViewCommand = new ViewModelCommand(ExecuteShowReceiptsViewCommand);
+            ShowSaleStatisticViewCommand = new ViewModelCommand(ExecuteShowSaleStatisticViewCommand);
+            ShowActivityViewCommand = new ViewModelCommand(ExecuteShowActivityViewCommand);
 
-    //public MainViewModel()
-    //{
-    //    userRepository = new UserRepository();
-    //    CurrentUserAccount = new UserAccountModel();
 
-    //    //Initialize commands
-    //    ShowHomeViewCommand = new ViewModelCommand(ExecuteShowHomeViewCommand);
-    //    ShowCustomerViewCommand = new ViewModelCommand(ExecuteShowCustomerViewCommand);
+            //Default view
+            ExecuteShowProductsViewCommand(null);
 
-    //    //Default view
-    //    ExecuteShowHomeViewCommand(null);
+        }
 
-    //    LoadCurrentUserData();
-    //}
+        private void ExecuteShowProductsViewCommand(object obj)
+        {
+            CurrentChildView = new ProductsViewModel();
+            Caption = "Products";
+        }
 
-    //private void ExecuteShowCustomerViewCommand(object obj)
-    //{
-    //    CurrentChildView = new CustomerViewModel();
-    //    Caption = "Customers";
-    //    Icon = IconChar.UserGroup;
-    //}
+        private void ExecuteShowInvoicesViewCommand(object obj)
+        {
+            CurrentChildView = new InvoicesViewModel();
+            Caption = "Invoices";
+        }
 
-    //private void ExecuteShowHomeViewCommand(object obj)
-    //{
-    //    CurrentChildView = new HomeViewModel();
-    //    Caption = "Dashboard";
-    //    Icon = IconChar.Home;
-    //}
+        private void ExecuteShowReceiptsViewCommand(object obj)
+        {
+            CurrentChildView = new ReceiptsViewModel();
+            Caption = "Receipts";
+        }
+
+        private void ExecuteShowSaleStatisticViewCommand(object obj)
+        {
+            CurrentChildView = new SaleStatisticViewModel();
+            Caption = "Sale statistic";
+        }
+
+        private void ExecuteShowActivityViewCommand(object obj)
+        {
+            CurrentChildView = new ActivityViewModel();
+            Caption = "Activity";
+        }
+
+    }
 }

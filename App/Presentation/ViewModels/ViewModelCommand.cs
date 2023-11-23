@@ -1,40 +1,43 @@
 ﻿using System.Windows.Input;
 using System;
 
-public class ViewModelCommand : ICommand
+namespace Presentation.ViewModels
 {
-    //Fields
-    private readonly Action<object> _executeAction;
-    private readonly Predicate<object> _canExecuteAction;
-
-    //Constructors
-    public ViewModelCommand(Action<object> executeAction)
+    public class ViewModelCommand : ICommand
     {
-        _executeAction = executeAction;
-        _canExecuteAction = null;
-    }
+        //Fields
+        private readonly Action<object> _executeAction;
+        private readonly Predicate<object> _canExecuteAction;
 
-    public ViewModelCommand(Action<object> executeAction, Predicate<object> canExecuteAction)
-    {
-        _executeAction = executeAction;
-        _canExecuteAction = canExecuteAction;
-    }
+        //Constructors
+        public ViewModelCommand(Action<object> executeAction)
+        {
+            _executeAction = executeAction;
+            _canExecuteAction = null;
+        }
 
-    //Events
-    public event EventHandler CanExecuteChanged
-    {
-        add { CommandManager.RequerySuggested += value; }
-        remove { CommandManager.RequerySuggested -= value; }
-    }
+        public ViewModelCommand(Action<object> executeAction, Predicate<object> canExecuteAction)
+        {
+            _executeAction = executeAction;
+            _canExecuteAction = canExecuteAction;
+        }
 
-    //Methods
-    public bool CanExecute(object parameter)
-    {
-        return _canExecuteAction == null ? true : _canExecuteAction(parameter);
-    }
+        //Events
+        public event EventHandler CanExecuteChanged
+        {
+            add { CommandManager.RequerySuggested += value; }
+            remove { CommandManager.RequerySuggested -= value; }
+        }
 
-    public void Execute(object parameter)
-    {
-        _executeAction(parameter);
+        //Methods
+        public bool CanExecute(object parameter)
+        {
+            return _canExecuteAction == null ? true : _canExecuteAction(parameter);
+        }
+
+        public void Execute(object parameter)
+        {
+            _executeAction(parameter);
+        }
     }
 }

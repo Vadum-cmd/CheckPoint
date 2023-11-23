@@ -54,7 +54,7 @@ namespace Presentation.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Presentation;component/views/homeview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Presentation;V1.0.0.0;component/views/homeview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\HomeView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

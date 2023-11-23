@@ -164,3 +164,9 @@ C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-
 C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Views\HomeView.g.cs
 C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Views\CustomerView.baml
 C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Views\HomeView.baml
+C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Views\ActivityView.g.cs
+C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Views\InvoicesView.g.cs
+C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Views\ProductsView.g.cs
+C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Views\SaleStatisticView.g.cs
+C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Views\UserReceiptsView.g.cs
+C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
