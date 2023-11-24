@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\App\Presentation\App.xaml
-11407045341
+101028857059
 
-5-288624174
-2341750600362
-MainWindow.xaml;
+20-1592431135
+243-2028960860
+MainWindow.xaml;Styles\ButtonStyles.xaml;Styles\UIColors.xaml;Views\ActivityView.xaml;Views\InvoicesView.xaml;Views\LoginView.xaml;Views\MainView.xaml;Views\ProductsView.xaml;Views\SaleStatisticView.xaml;Views\UserReceiptsView.xaml;
 
 True
 

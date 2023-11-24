@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Security.Policy;
 using System.Text;
@@ -7,12 +8,12 @@ using System.Threading.Tasks;
 using DAL.Data;
 using DAL.Entities;
 
+
 namespace BLL
 {
     public class CRUD
     {
-        public static void InsertAction(int id, int actionProductId, float discount, 
-            DateTime dateFrom, DateTime dateTo, Product product)
+        public static void InsertAction(int id, int actionProductId, float discount, DateTime dateFrom, DateTime dateTo, Product product)
         {
             using (var context = new AppDBContext())
             {
@@ -34,8 +35,7 @@ namespace BLL
                 context.SaveChanges();
             }
         }
-        public static void InsertAction(int id, int actionProductId, float discount, 
-            DateTime dateFrom, DateTime dateTo, int amount, Product product)
+        public static void InsertAction(int id, int actionProductId, float discount, DateTime dateFrom, DateTime dateTo, int amount, Product product)
         {
             using (var context = new AppDBContext())
             {
@@ -59,8 +59,7 @@ namespace BLL
             }
         }
 
-        public static void InsertEmployee(int id, string name, string surname, string position, string login, string password, 
-            int employeePermissionId, EmployeePermission employeePermission, IList<EmployeeSession> employeeSessions)
+        public static void InsertEmployee(int id, string name, string surname, string position, string login, string password, int employeePermissionId, EmployeePermission employeePermission, IList<EmployeeSession> employeeSessions)
         {
             using (var context = new AppDBContext())
             {
@@ -128,8 +127,7 @@ namespace BLL
             }
         }
 
-        public static void InsertInvoice(int id, DateTime dateOf, string provider, 
-            int totalPrice, IList<ProductInvoice> productInvoices)
+        public static void InsertInvoice(int id, DateTime dateOf, string provider, int totalPrice, IList<ProductInvoice> productInvoices)
         {
             using (var context = new AppDBContext())
             {
@@ -204,8 +202,7 @@ namespace BLL
             }
         }
 
-        public static void InsertProductReceipt(int receiptId, int productId, int amount, float price, 
-            int actionId, Receipt receipt, Product product, DAL.Entities.Action action)
+        public static void InsertProductReceipt(int receiptId, int productId, int amount, float price, int actionId, Receipt receipt, Product product, DAL.Entities.Action action)
         {
             using (var context = new AppDBContext())
             {
@@ -229,8 +226,7 @@ namespace BLL
                 context.SaveChanges();
             }
         }
-        public static void InsertProductReceipt(int receiptId, int productId, int amount, float price,
-            Receipt receipt, Product product, DAL.Entities.Action action)
+        public static void InsertProductReceipt(int receiptId, int productId, int amount, float price, Receipt receipt, Product product, DAL.Entities.Action action)
         {
             using (var context = new AppDBContext())
             {
@@ -439,8 +435,5 @@ namespace BLL
                 context.SaveChanges();
             }
         }
-
-
-
     }
 }
