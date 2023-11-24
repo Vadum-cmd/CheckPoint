@@ -12,8 +12,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+<<<<<<< HEAD
 using Presentation.ViewModels;
 
+=======
+>>>>>>> a273ee4177548882280b5c8ad55562968f9b5451
 
 namespace Presentation.Views
 {
@@ -25,7 +28,10 @@ namespace Presentation.Views
         public InvoicesView()
         {
             InitializeComponent();
+<<<<<<< HEAD
             DataContext = new InvoicesViewModel();
+=======
+>>>>>>> a273ee4177548882280b5c8ad55562968f9b5451
         }
     }
 }

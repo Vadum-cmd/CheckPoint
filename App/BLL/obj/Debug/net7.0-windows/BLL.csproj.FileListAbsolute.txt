@@ -9,6 +9,7 @@ B:\CheckPoint\App\BLL\obj\Debug\net7.0-windows\BLL.dll
 B:\CheckPoint\App\BLL\obj\Debug\net7.0-windows\refint\BLL.dll
 B:\CheckPoint\App\BLL\obj\Debug\net7.0-windows\BLL.pdb
 B:\CheckPoint\App\BLL\obj\Debug\net7.0-windows\ref\BLL.dll
+<<<<<<< HEAD
 C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\App\BLL\bin\Debug\net7.0-windows\BLL.deps.json
 C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\App\BLL\bin\Debug\net7.0-windows\BLL.dll
 C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\App\BLL\bin\Debug\net7.0-windows\BLL.pdb
@@ -29,3 +30,16 @@ C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\App\BLL\bin\Debug\net7.0-windo
 C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\App\BLL\obj\Debug\net7.0-windows\BLL.csproj.AssemblyReference.cache
 C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\App\BLL\obj\Debug\net7.0-windows\BLL.csproj.CopyComplete
 C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\App\BLL\obj\Debug\net7.0-windows\BLL.genruntimeconfig.cache
+=======
+C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\BLL\bin\Debug\net7.0-windows\BLL.deps.json
+C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\BLL\bin\Debug\net7.0-windows\BLL.dll
+C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\BLL\bin\Debug\net7.0-windows\BLL.pdb
+C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\BLL\obj\Debug\net7.0-windows\BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\BLL\obj\Debug\net7.0-windows\BLL.AssemblyInfoInputs.cache
+C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\BLL\obj\Debug\net7.0-windows\BLL.AssemblyInfo.cs
+C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\BLL\obj\Debug\net7.0-windows\BLL.csproj.CoreCompileInputs.cache
+C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\BLL\obj\Debug\net7.0-windows\BLL.dll
+C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\BLL\obj\Debug\net7.0-windows\refint\BLL.dll
+C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\BLL\obj\Debug\net7.0-windows\BLL.pdb
+C:\Users\My\Source\Repos\Vadum-cmd\CheckPoint\App\BLL\obj\Debug\net7.0-windows\ref\BLL.dll
+>>>>>>> a273ee4177548882280b5c8ad55562968f9b5451

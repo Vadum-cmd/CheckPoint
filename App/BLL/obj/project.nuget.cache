@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KaXN5do8fGqelsUKEIsb9VAUtK8I7FEDyeFZ2dCSPfgRYYK0srsKVOI7qTo5PKSvk8gHihM5MFUak7mgW4P5lg==",
+  "dgSpecHash": "os17cjqqBS6HDsXwr3amK28g1fYfmtVnpYNkV7oTc37Hj7MPdNj4IofgX/HT0lssKpR3utWBCYvpMNLp6yXX+A==",
   "success": true,
   "projectFilePath": "C:\\Users\\vadum\\Downloads\\schoolwork\\pe\\CheckPoint\\App\\BLL\\BLL.csproj",
   "expectedPackageFiles": [
@@ -70,5 +70,12 @@
     "C:\\Users\\vadum\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\vadum\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\vadum\\Downloads\\schoolwork\\pe\\CheckPoint\\App\\BLL\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

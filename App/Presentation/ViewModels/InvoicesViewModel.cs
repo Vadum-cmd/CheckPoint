@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics.Metrics;
@@ -101,5 +102,11 @@ namespace Presentation.ViewModels
                 }
             }
         }
+=======
+﻿namespace Presentation.ViewModels
+{
+    public class InvoicesViewModel : ViewModelBase
+    {
+>>>>>>> a273ee4177548882280b5c8ad55562968f9b5451
     }
 }

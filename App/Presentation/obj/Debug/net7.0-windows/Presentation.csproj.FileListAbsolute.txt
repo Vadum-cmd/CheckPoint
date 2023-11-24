@@ -171,6 +171,7 @@ C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-
 C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Views\ProductsView.baml
 C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Views\SaleStatisticView.baml
 C:\Users\My\source\repos\Vadum-cmd\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Views\UserReceiptsView.baml
+<<<<<<< HEAD
 C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\App\Presentation\bin\Debug\net7.0-windows\Presentation.exe
 C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\App\Presentation\bin\Debug\net7.0-windows\App.config
 C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\App\Presentation\bin\Debug\net7.0-windows\Presentation.deps.json
@@ -269,3 +270,5 @@ C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\App\Presentation\obj\Debug\net
 C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Presentation.pdb
 C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Presentation.genruntimeconfig.cache
 C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\ref\Presentation.dll
+=======
+>>>>>>> a273ee4177548882280b5c8ad55562968f9b5451

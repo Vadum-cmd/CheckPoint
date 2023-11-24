@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\App",
+    "\\App\\BLL",
+    "\\App\\DAL",
+    "\\App\\DAL\\Entities",
+    "\\documents"
   ],
+  "SelectedNode": "\\App\\DAL\\Entities\\ProductInvoice.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -12,6 +12,7 @@
       }
     ],
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "C:\\Users\\vadum\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\vadum\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -19,6 +20,13 @@
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true,
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
+=======
+      "C:\\Users\\My\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\My\\.nuget\\packages"
+    ],
+    "configProperties": {
+      "System.Reflection.NullabilityInfoContext.IsSupported": true,
+>>>>>>> a273ee4177548882280b5c8ad55562968f9b5451
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
     }
   }
