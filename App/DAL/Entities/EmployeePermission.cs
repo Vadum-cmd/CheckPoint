@@ -11,7 +11,7 @@ namespace DAL.Entities
     {
         public int Id { get; set; }
         public required string Title { get; set; }
-        public required JSObject Acts { get; set; }
+        public required string Acts { get; set; }
 
         public required IList<Employee> Employees { get; set; }
     }

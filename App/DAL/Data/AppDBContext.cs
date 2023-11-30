@@ -24,17 +24,21 @@ namespace DAL.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var connection = ConfigurationManager.ConnectionStrings["MainConnection"].ToString();
-            if (connection != null)
-            {
-                var serverVersion = new MySqlServerVersion(new Version(8, 0, 35));
-                optionsBuilder.UseMySql(connection, serverVersion);
-            }
-            else
-            {
-                Console.WriteLine("MainConnection is null");
-            }
-            
+            //var connection = ConfigurationManager.ConnectionStrings["MainConnection"].ToString();
+            //if (connection != null)
+            //{
+            //    var serverVersion = new MySqlServerVersion(new Version(8, 0, 35));
+            //    optionsBuilder.UseMySql(connection, serverVersion);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("MainConnection is null");
+            //}
+            var connectionString = "server=localhost;user=root;database=warehousecontext;port=3306;password=VVe3buoQ;";
+
+            var serverVersion = new MySqlServerVersion(new Version(8, 0, 34));
+
+            optionsBuilder.UseMySql(connectionString, serverVersion);
         }
 
     }

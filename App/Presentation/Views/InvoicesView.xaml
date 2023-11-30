@@ -71,7 +71,9 @@
             Background="#11a797"
             CornerRadius="5" 
             Padding="5">
-            <DataGrid ColumnWidth="*"
+            <DataGrid Grid.Row="1"
+              ItemsSource="{Binding temp}"
+              ColumnWidth="*"
               Background="#FF082B1D"
               BorderThickness="0" >
                 <DataGrid.ColumnHeaderStyle>
@@ -84,11 +86,10 @@
                     </Style>
                 </DataGrid.ColumnHeaderStyle>
                 <DataGrid.Columns >
-                    <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="ID" HeaderStringFormat="" />
-                    <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Date of"/>
-                    <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Provider"/>
-                    <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Total price"/>
-                    <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Products"/>
+                    <DataGridTextColumn Binding="{Binding Id}" ClipboardContentBinding="{x:Null}" Header="ID" HeaderStringFormat="" />
+                    <DataGridTextColumn Binding="{Binding DateOf}" ClipboardContentBinding="{x:Null}" Header="Date of"/>
+                    <DataGridTextColumn Binding="{Binding Provider}" ClipboardContentBinding="{x:Null}" Header="Provider"/>
+                    <DataGridTextColumn Binding="{Binding TotalPrice}" ClipboardContentBinding="{x:Null}" Header="Total price"/>
                 </DataGrid.Columns>
             </DataGrid>
         </Border>
