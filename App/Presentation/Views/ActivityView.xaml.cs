@@ -1,4 +1,7 @@
-﻿using System;
+﻿using DAL;
+using DAL.Entities;
+using Presentation.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +23,25 @@ namespace Presentation.Views
     /// </summary>
     public partial class ActivityView : UserControl
     {
+        public List<EmployeeSession> Data { get; set; }
+        public List<ActivityViewModel> ActionsViewModels { get; set; }
         public ActivityView()
         {
             InitializeComponent();
+            DataContext = this;
+
+            Data = UserQueries.GetSessions();
+            ActionsViewModels = new List<ActivityViewModel>();
+
+            foreach (var action in Data)
+            {
+                ActionsViewModels.Add(new ActivityViewModel
+                {
+                    Id = action.Id,
+                    EmployeeId = action.EmployeeId,
+                    Time = action.Time
+                });
+            }
         }
     }
 }

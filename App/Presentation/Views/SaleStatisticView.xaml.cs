@@ -1,4 +1,7 @@
-﻿using System;
+﻿using DAL.Entities;
+using DAL;
+using Presentation.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +23,27 @@ namespace Presentation.Views
     /// </summary>
     public partial class SaleStatisticView : UserControl
     {
+        public List<SaleStatistic> Data { get; set; }
+        public List<SaleStatisticViewModel> StatisticsViewModels { get; set; }
         public SaleStatisticView()
         {
             InitializeComponent();
+            DataContext = this;
+
+            Data = UserQueries.GetStatistics();
+            StatisticsViewModels = new List<SaleStatisticViewModel>();
+
+            foreach (var statistic in Data)
+            {
+                StatisticsViewModels.Add(new SaleStatisticViewModel
+                {
+                    Id = statistic.Id,
+                    SaleStatisticProductId = statistic.SaleStatisticProductId,
+                    SoldOut = statistic.SoldOut == null ? 0 : (int)statistic.SoldOut,
+                    SaleDate = statistic.SaleDate == null ? DateTime.MinValue : (DateTime)statistic.SaleDate,
+                    Expired = statistic.Expired == null ? 0 : (int)statistic.Expired
+                });
+            }
         }
     }
 }

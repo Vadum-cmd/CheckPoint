@@ -26,13 +26,26 @@ namespace Presentation.Views
     /// </summary>
     public partial class InvoicesView : UserControl
     {
-        public List<Invoice> temp { get; set; } 
+        public List<Invoice> Data { get; set; }
+        public List<InvoicesViewModel> InvoicesViewModels { get; set; } 
         public InvoicesView()
         {
             InitializeComponent();
             DataContext = this;
-            List<InvoicesViewModel> invoicesViewModels;
-            temp = UserQueries.GetInvoices();
+
+            Data = UserQueries.GetInvoices();
+            InvoicesViewModels = new List<InvoicesViewModel>();
+
+            foreach (var invoice in Data) 
+            {
+                InvoicesViewModels.Add(new InvoicesViewModel
+                {
+                    Id = invoice.Id,
+                    DateOf = invoice.DateOf,
+                    Provider = invoice.Provider,
+                    TotalPrice = invoice.TotalPrice,
+                });
+            }
         }
     }
 }

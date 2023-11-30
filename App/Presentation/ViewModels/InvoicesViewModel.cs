@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DAL.Entities;
+using System;
+using System.Collections.Generic;
 
 namespace Presentation.ViewModels
 {

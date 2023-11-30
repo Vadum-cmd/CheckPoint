@@ -71,7 +71,8 @@
             Background="#11a797"
             CornerRadius="5" 
             Padding="5">
-            <DataGrid ColumnWidth="*"
+            <DataGrid ItemsSource="{Binding ReceiptsViewModels}"
+              ColumnWidth="*"
               Background="#FF082B1D"
               BorderThickness="0" >
                 <DataGrid.ColumnHeaderStyle>
@@ -83,6 +84,7 @@
                         <Setter Property="FontSize" Value="15"/>
                     </Style>
                 </DataGrid.ColumnHeaderStyle>
+                <!--
                 <DataGrid.Columns >
                     <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="ID" HeaderStringFormat="" />
                     <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Total price"/>
@@ -90,6 +92,7 @@
                     <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Products"/>
 
                 </DataGrid.Columns>
+                -->
             </DataGrid>
         </Border>
 

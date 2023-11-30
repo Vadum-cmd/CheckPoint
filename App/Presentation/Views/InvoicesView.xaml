@@ -71,8 +71,8 @@
             Background="#11a797"
             CornerRadius="5" 
             Padding="5">
-            <DataGrid Grid.Row="1"
-              ItemsSource="{Binding temp}"
+            <DataGrid
+              ItemsSource="{Binding InvoicesViewModels}"
               ColumnWidth="*"
               Background="#FF082B1D"
               BorderThickness="0" >
@@ -85,14 +85,15 @@
                         <Setter Property="FontSize" Value="15"/>
                     </Style>
                 </DataGrid.ColumnHeaderStyle>
-                <DataGrid.Columns >
+                <!--
+                <DataGrid.Columns>
                     <DataGridTextColumn Binding="{Binding Id}" ClipboardContentBinding="{x:Null}" Header="ID" HeaderStringFormat="" />
                     <DataGridTextColumn Binding="{Binding DateOf}" ClipboardContentBinding="{x:Null}" Header="Date of"/>
                     <DataGridTextColumn Binding="{Binding Provider}" ClipboardContentBinding="{x:Null}" Header="Provider"/>
                     <DataGridTextColumn Binding="{Binding TotalPrice}" ClipboardContentBinding="{x:Null}" Header="Total price"/>
                 </DataGrid.Columns>
+                -->
             </DataGrid>
         </Border>
-
     </Grid>
 </UserControl>
