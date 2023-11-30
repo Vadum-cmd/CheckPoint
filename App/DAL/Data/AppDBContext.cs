@@ -25,7 +25,8 @@ namespace DAL.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var connection = ConfigurationManager.ConnectionStrings[name: "RostikConnection"].ConnectionString;
+            var connection = ConfigurationManager.ConnectionStrings["RostikConnection"].ConnectionString;
+            //string connection = "server=localhost;user=root;database=warehousecontext;port=3306;password=1q2w3e4r;";
             if (connection != null)
             {
                 var serverVersion = new MySqlServerVersion(new Version(8, 0, 35));

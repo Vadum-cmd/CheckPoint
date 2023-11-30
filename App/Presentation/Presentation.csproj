@@ -41,9 +41,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="DAL\App.config">
+    <None Update="..\DAL\App.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    
   </ItemGroup>
 
 </Project>
