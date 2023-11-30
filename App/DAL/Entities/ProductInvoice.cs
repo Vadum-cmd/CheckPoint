@@ -9,10 +9,9 @@ namespace DAL.Entities
 {
     public class ProductInvoice
     {
-        public int Id { get; set; }
-        public int InvoiceId { get; set; }
-        public int ProductId { get; set; }
-        public int Amount { get; set; }
+        public required int InvoiceId { get; set; }
+        public required int ProductId { get; set; }
+        public required int Amount { get; set; }
 
         public required Invoice Invoice { get; set; }
         public required Product Product { get; set; }

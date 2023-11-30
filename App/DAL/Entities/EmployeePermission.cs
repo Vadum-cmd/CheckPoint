@@ -13,6 +13,6 @@ namespace DAL.Entities
         public required string Title { get; set; }
         public required string Acts { get; set; }
 
-        public required IList<Employee> Employees { get; set; }
+        public IList<Employee>? Employees { get; set; }
     }
 }

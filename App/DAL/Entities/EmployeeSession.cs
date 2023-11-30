@@ -9,8 +9,8 @@ namespace DAL.Entities
     public class EmployeeSession
     {
         public int Id { get; set; }
-        public int EmployeeId { get; set; }
-        public DateTime Time { get; set; }
+        public required int EmployeeId { get; set; }
+        public required DateTime Time { get; set; }
 
         public required Employee Employee { get; set; }
     }
