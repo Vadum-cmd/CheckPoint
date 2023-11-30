@@ -25,7 +25,7 @@ namespace DAL.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var connection = ConfigurationManager.ConnectionStrings["RostikConnection"].ToString();
+            var connection = ConfigurationManager.ConnectionStrings[name: "VadymConnection"].ToString();
             if (connection != null)
             {
                 var serverVersion = new MySqlServerVersion(new Version(8, 0, 35));
