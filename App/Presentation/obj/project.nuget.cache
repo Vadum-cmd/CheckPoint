@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CIfPaGX9M9VpXhIzDD0nrS+IG7DvuSoZBu4obYL9k8rmPXIExLtbG44nsC4knEn7yknc98H1KPwGHIK6Iytisw==",
+  "dgSpecHash": "5ST3ONrBF8IN2OpmOPe7rdI3RZ7o8tmhdsz6gsiHxiVe2JYoMzgzLzgMZs9X4aDG6eynuaiuEzjDper9N/032Q==",
   "success": true,
   "projectFilePath": "B:\\CheckPoint\\App\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
@@ -49,6 +49,7 @@
     "C:\\Users\\Rostyslav\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Rostyslav\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Rostyslav\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Rostyslav\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512",
     "C:\\Users\\Rostyslav\\.nuget\\packages\\system.codedom\\4.7.0\\system.codedom.4.7.0.nupkg.sha512",
     "C:\\Users\\Rostyslav\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\Rostyslav\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\system.configuration.configurationmanager.6.0.1.nupkg.sha512",

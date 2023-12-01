@@ -1,17 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DAL.Entities
+﻿namespace DAL.Entities
 {
+    using System;
+
     public class EmployeeSession
     {
         public int Id { get; set; }
-        public required int EmployeeId { get; set; }
-        public required DateTime Time { get; set; }
 
-        public required Employee Employee { get; set; }
+        required public int EmployeeId { get; set; }
+
+        required public DateTime Time { get; set; }
+
+        required public Employee Employee { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace DAL.Migrations
 {
     [DbContext(typeof(AppDBContext))]
     [Migration("20231103070423_changed_name_of_fk")]
-    partial class changed_name_of_fk
+    partial class Changed_name_of_fk
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

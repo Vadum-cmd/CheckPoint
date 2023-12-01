@@ -1,23 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DAL.Entities;
-
-namespace DAL.Entities
+﻿namespace DAL.Entities
 {
+    using System.Collections.Generic;
+
     public class Employee
     {
         public int Id { get; set; }
-        public required string Name { get; set; }
-        public required string Surname { get; set; }
-        public required string Position { get; set; }
-        public required string Login { get; set; }
-        public required string Password { get; set; }
 
-        public required int EmployeePermissionId { get; set; }
-        public required EmployeePermission EmployeePermission { get; set; }
+        required public string Name { get; set; }
+
+        required public string Surname { get; set; }
+
+        required public string Position { get; set; }
+
+        required public string Login { get; set; }
+
+        required public string Password { get; set; }
+
+        required public int EmployeePermissionId { get; set; }
+
+        required public EmployeePermission EmployeePermission { get; set; }
 
         public IList<EmployeeSession>? EmployeeSessions { get; set; }
     }

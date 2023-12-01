@@ -10,8 +10,10 @@ namespace DAL.Entities
     public class EmployeePermission
     {
         public int Id { get; set; }
-        public required string Title { get; set; }
-        public required string Acts { get; set; }
+
+        required public string Title { get; set; }
+
+        required public string Acts { get; set; }
 
         public IList<Employee>? Employees { get; set; }
     }

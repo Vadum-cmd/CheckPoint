@@ -1,15 +1,15 @@
-﻿using System.ComponentModel;
-
-namespace Presentation.ViewModels
-
+﻿namespace Presentation.ViewModels
 {
+    using System.ComponentModel;
+
     public abstract class ViewModelBase : INotifyPropertyChanged
     {
+        /// <inheritdoc/>
         public event PropertyChangedEventHandler PropertyChanged;
 
         public void OnPropertyChanged(string propertyName)
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

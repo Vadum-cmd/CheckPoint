@@ -1,11 +1,15 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿// <copyright file="20231103065611_Initial.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 
 #nullable disable
 
 namespace DAL.Migrations
 {
+    using System;
+    using Microsoft.EntityFrameworkCore.Metadata;
+    using Microsoft.EntityFrameworkCore.Migrations;
+
     /// <inheritdoc />
     public partial class Initial : Migration
     {
@@ -24,7 +28,7 @@ namespace DAL.Migrations
                     Title = table.Column<string>(type: "varchar(64)", maxLength: 64, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Acts = table.Column<string>(type: "longtext", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4")
+                        .Annotation("MySql:CharSet", "utf8mb4"),
                 },
                 constraints: table =>
                 {
@@ -41,7 +45,7 @@ namespace DAL.Migrations
                     DateOf = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     Provider = table.Column<string>(type: "varchar(255)", maxLength: 255, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    TotalPrice = table.Column<int>(type: "int", nullable: false)
+                    TotalPrice = table.Column<int>(type: "int", nullable: false),
                 },
                 constraints: table =>
                 {
@@ -64,7 +68,7 @@ namespace DAL.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     DateManufacture = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     DateExpiration = table.Column<DateTime>(type: "datetime(6)", nullable: false),
-                    InStock = table.Column<int>(type: "int", nullable: false)
+                    InStock = table.Column<int>(type: "int", nullable: false),
                 },
                 constraints: table =>
                 {
@@ -79,7 +83,7 @@ namespace DAL.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     TotalPrice = table.Column<float>(type: "float", nullable: false),
-                    DateOf = table.Column<DateTime>(type: "datetime(6)", nullable: false)
+                    DateOf = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                 },
                 constraints: table =>
                 {
@@ -103,7 +107,7 @@ namespace DAL.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Password = table.Column<string>(type: "varchar(64)", maxLength: 64, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    EmployeePermissionId = table.Column<int>(type: "int", nullable: false)
+                    EmployeePermissionId = table.Column<int>(type: "int", nullable: false),
                 },
                 constraints: table =>
                 {
@@ -128,7 +132,7 @@ namespace DAL.Migrations
                     DateFrom = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     DateTo = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     Amount = table.Column<int>(type: "int", nullable: true),
-                    ProductId1 = table.Column<int>(type: "int", nullable: true)
+                    ProductId1 = table.Column<int>(type: "int", nullable: true),
                 },
                 constraints: table =>
                 {
@@ -153,7 +157,7 @@ namespace DAL.Migrations
                 {
                     InvoiceId = table.Column<int>(type: "int", nullable: false),
                     ProductId = table.Column<int>(type: "int", nullable: false),
-                    Amount = table.Column<int>(type: "int", nullable: false)
+                    Amount = table.Column<int>(type: "int", nullable: false),
                 },
                 constraints: table =>
                 {
@@ -183,7 +187,7 @@ namespace DAL.Migrations
                     SoldOut = table.Column<int>(type: "int", nullable: true),
                     SaleDate = table.Column<DateTime>(type: "datetime(6)", nullable: true),
                     Expired = table.Column<int>(type: "int", nullable: true),
-                    ProductId1 = table.Column<int>(type: "int", nullable: true)
+                    ProductId1 = table.Column<int>(type: "int", nullable: true),
                 },
                 constraints: table =>
                 {
@@ -209,7 +213,7 @@ namespace DAL.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     EmployeeId = table.Column<int>(type: "int", nullable: false),
-                    Time = table.Column<DateTime>(type: "datetime(6)", nullable: false)
+                    Time = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                 },
                 constraints: table =>
                 {
@@ -231,7 +235,7 @@ namespace DAL.Migrations
                     ProductId = table.Column<int>(type: "int", nullable: false),
                     Amount = table.Column<int>(type: "int", nullable: false),
                     Price = table.Column<float>(type: "float", nullable: false),
-                    ActionId = table.Column<int>(type: "int", nullable: true)
+                    ActionId = table.Column<int>(type: "int", nullable: true),
                 },
                 constraints: table =>
                 {

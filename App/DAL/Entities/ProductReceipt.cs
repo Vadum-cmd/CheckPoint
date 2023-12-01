@@ -1,22 +1,21 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DAL.Entities
+﻿namespace DAL.Entities
 {
     public class ProductReceipt
     {
-        public required int ReceiptId { get; set; }
-        public required int ProductId { get; set; }
-        public required int Amount { get; set; }
-        public required float Price { get; set; }
+        required public int ReceiptId { get; set; }
+
+        required public int ProductId { get; set; }
+
+        required public int Amount { get; set; }
+
+        required public float Price { get; set; }
+
         public int? ActionId { get; set; }
 
-        public required Receipt Receipt { get; set; }
-        public required Product Product { get; set; }
+        required public Receipt Receipt { get; set; }
+
+        required public Product Product { get; set; }
+
         public Action? Action { get; set; }
     }
 }

@@ -1,28 +1,27 @@
-﻿using FontAwesome.Sharp;
-using Presentation.ViewModels;
-using System.Windows.Input;
+﻿namespace Presentation.ViewModels
+{
+    using System.Windows.Input;
 
-namespace Presentation.ViewModels {
     public class MainViewModel : ViewModelBase
     {
-        //Fields
+        // Fields
         private ViewModelBase _currentChildView;
         private string _caption;
 
 
-        //Properties
+        // Properties
 
         public ViewModelBase CurrentChildView
         {
             get
             {
-                return _currentChildView;
+                return this._currentChildView;
             }
 
             set
             {
-                _currentChildView = value;
-                OnPropertyChanged(nameof(CurrentChildView));
+                this._currentChildView = value;
+                this.OnPropertyChanged(nameof(CurrentChildView));
             }
         }
 
@@ -30,68 +29,69 @@ namespace Presentation.ViewModels {
         {
             get
             {
-                return _caption;
+                return this._caption;
             }
 
             set
             {
-                _caption = value;
-                OnPropertyChanged(nameof(Caption));
+                this._caption = value;
+                this.OnPropertyChanged(nameof(Caption));
             }
         }
 
-
         //--> Commands
         public ICommand ShowProductsViewCommand { get; }
+
         public ICommand ShowInvoicesViewCommand { get; }
+
         public ICommand ShowSaleStatisticViewCommand { get; }
+
         public ICommand ShowReceiptsViewCommand { get; }
+
         public ICommand ShowActivityViewCommand { get; }
 
         public MainViewModel()
         {
 
-            //Initialize commands
-            ShowProductsViewCommand = new ViewModelCommand(ExecuteShowProductsViewCommand);
-            ShowInvoicesViewCommand = new ViewModelCommand(ExecuteShowInvoicesViewCommand);
-            ShowReceiptsViewCommand = new ViewModelCommand(ExecuteShowReceiptsViewCommand);
-            ShowSaleStatisticViewCommand = new ViewModelCommand(ExecuteShowSaleStatisticViewCommand);
-            ShowActivityViewCommand = new ViewModelCommand(ExecuteShowActivityViewCommand);
+            // Initialize commands
+            this.ShowProductsViewCommand = new ViewModelCommand(this.ExecuteShowProductsViewCommand);
+            this.ShowInvoicesViewCommand = new ViewModelCommand(this.ExecuteShowInvoicesViewCommand);
+            this.ShowReceiptsViewCommand = new ViewModelCommand(this.ExecuteShowReceiptsViewCommand);
+            this.ShowSaleStatisticViewCommand = new ViewModelCommand(this.ExecuteShowSaleStatisticViewCommand);
+            this.ShowActivityViewCommand = new ViewModelCommand(this.ExecuteShowActivityViewCommand);
 
-
-            //Default view
-            ExecuteShowProductsViewCommand(null);
-
+            // Default view
+            this.ExecuteShowProductsViewCommand(null);
         }
 
-        private void ExecuteShowProductsViewCommand(object obj)
+        private void ExecuteShowProductsViewCommand(object? obj)
         {
-            CurrentChildView = new ProductsViewModel();
-            Caption = "Products";
+            this.CurrentChildView = new ProductsViewModel();
+            this.Caption = "Products";
         }
 
         private void ExecuteShowInvoicesViewCommand(object obj)
         {
-            CurrentChildView = new InvoicesViewModel();
-            Caption = "Invoices";
+            this.CurrentChildView = new InvoicesViewModel();
+            this.Caption = "Invoices";
         }
 
         private void ExecuteShowReceiptsViewCommand(object obj)
         {
-            CurrentChildView = new ReceiptsViewModel();
-            Caption = "Receipts";
+            this.CurrentChildView = new ReceiptsViewModel();
+            this.Caption = "Receipts";
         }
 
         private void ExecuteShowSaleStatisticViewCommand(object obj)
         {
-            CurrentChildView = new SaleStatisticViewModel();
-            Caption = "Sale statistic";
+            this.CurrentChildView = new SaleStatisticViewModel();
+            this.Caption = "Sale statistic";
         }
 
         private void ExecuteShowActivityViewCommand(object obj)
         {
-            CurrentChildView = new ActivityViewModel();
-            Caption = "Activity";
+            this.CurrentChildView = new ActivityViewModel();
+            this.Caption = "Activity";
         }
 
     }

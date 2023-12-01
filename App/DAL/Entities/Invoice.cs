@@ -1,18 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DAL.Entities
+﻿namespace DAL.Entities
 {
+    using System;
+    using System.Collections.Generic;
+
     public class Invoice
     {
         public int Id { get; set; }
-        public required DateTime DateOf { get; set; }
-        public required string Provider { get; set; }
-        public required int TotalPrice { get; set; }
 
-        public required IList<ProductInvoice> ProductInvoices { get; set; }
+        required public DateTime DateOf { get; set; }
+
+        required public string Provider { get; set; }
+
+        required public int TotalPrice { get; set; }
+
+        required public IList<ProductInvoice> ProductInvoices { get; set; }
     }
 }
