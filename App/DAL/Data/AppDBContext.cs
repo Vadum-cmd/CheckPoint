@@ -31,7 +31,8 @@
         /// <inheritdoc/>
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var connection = ConfigurationManager.ConnectionStrings["RostikConnection"].ConnectionString;
+            // var connection = ConfigurationManager.ConnectionStrings["RostikConnection"].ConnectionString;
+            var connection = ConfigurationManager.ConnectionStrings["VadymConnection"].ConnectionString;
             if (connection != null)
             {
                 var serverVersion = new MySqlServerVersion(new Version(8, 0, 35));

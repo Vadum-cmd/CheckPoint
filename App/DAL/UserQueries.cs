@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Diagnostics;
     using System.Linq;
     using DAL.Data;
     using DAL.Entities;
@@ -15,8 +16,16 @@
             dbContext = new AppDBContext();
         }
 
+        private static void LogQuery(string query)
+        {
+            Debug.WriteLine($"Executing query: {query}");
+        }
+
         public static Invoice GetInvoiceById(int id)
         {
+            string query = $"SELECT * FROM Invoice WHERE Id = {id}";
+            LogQuery(query);
+
             List<Invoice> invoices = (from invoice in dbContext.Invoice
                                       where invoice.Id == id
                                       select invoice).ToList();
@@ -30,6 +39,9 @@
 
         public static List<Invoice> GetInvoices()
         {
+            string query = "SELECT * FROM Invoice";
+            LogQuery(query);
+
             List<Invoice> invoices = (from invoice in dbContext.Invoice
                                       select invoice).ToList();
             if (invoices.Count >= 0)
@@ -42,6 +54,9 @@
 
         public static Entities.Action GetActionById(int id)
         {
+            string query = $"SELECT * FROM Action WHERE Id = {id}";
+            LogQuery(query);
+
             List<Entities.Action> actions = (from action in dbContext.Action
                                       where action.Id == id
                                       select action).ToList();
@@ -55,6 +70,9 @@
 
         public static List<Entities.Action> GetActions()
         {
+            string query = "SELECT * FROM Action";
+            LogQuery(query);
+
             List<Entities.Action> actions = (from action in dbContext.Action
                                       select action).ToList();
             if (actions.Count >= 0)
@@ -67,6 +85,9 @@
 
         public static EmployeeSession GetSessionById(int id)
         {
+            string query = $"SELECT * FROM EmployeeSession WHERE Id = {id}";
+            LogQuery(query);
+
             List<EmployeeSession> sessions = (from session in dbContext.EmployeeSession
                                               where session.Id == id
                                               select session).ToList();
@@ -80,6 +101,9 @@
 
         public static List<EmployeeSession> GetSessions()
         {
+            string query = "SELECT * FROM EmployeeSession";
+            LogQuery(query);
+
             List<EmployeeSession> sessions = (from session in dbContext.EmployeeSession
                                       select session).ToList();
             if (sessions.Count >= 0)
@@ -92,6 +116,9 @@
 
         public static SaleStatistic GetStatisticById(int id)
         {
+            string query = $"SELECT * FROM SaleStatistic WHERE Id = {id}";
+            LogQuery(query);
+
             List<SaleStatistic> statistics = (from statistic in dbContext.SaleStatistic
                                             where statistic.Id == id
                                             select statistic).ToList();
@@ -105,6 +132,9 @@
 
         public static List<SaleStatistic> GetStatistics()
         {
+            string query = "SELECT * FROM SaleStatistic";
+            LogQuery(query);
+
             List<SaleStatistic> statistics = (from statistic in dbContext.SaleStatistic
                                             select statistic).ToList();
             if (statistics.Count >= 0)
@@ -117,6 +147,9 @@
 
         public static ProductReceipt GetReceiptById(int id)
         {
+            string query = $"SELECT * FROM ProductReceipt WHERE ReceiptId = {id}";
+            LogQuery(query);
+
             List<ProductReceipt> receipts = (from receipt in dbContext.ProductReceipt
                                                where receipt.ReceiptId == id
                                                select receipt).ToList();
@@ -130,6 +163,9 @@
 
         public static List<ProductReceipt> GetReceipts()
         {
+            string query = "SELECT * FROM ProductReceipt";
+            LogQuery(query);
+
             List<ProductReceipt> receipts = (from receipt in dbContext.ProductReceipt
                                                select receipt).ToList();
             if (receipts.Count >= 0)
@@ -142,6 +178,9 @@
 
         public static Product GetProductById(int id)
         {
+            string query = $"SELECT * FROM Product WHERE Id = {id}";
+            LogQuery(query);
+
             List<Product> products = (from product in dbContext.Product
                                              where product.Id == id
                                              select product).ToList();
@@ -155,6 +194,9 @@
 
         public static List<Product> GetProducts()
         {
+            string query = "SELECT * FROM Product";
+            LogQuery(query);
+
             List<Product> products = (from product in dbContext.Product
                                       select product).ToList();
             if (products.Count >= 0)
