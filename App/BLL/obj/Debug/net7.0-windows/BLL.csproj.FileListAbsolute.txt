@@ -33,3 +33,4 @@ C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\App\BLL\obj\Debug\net7.0-windo
 C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\App\BLL\obj\Debug\net7.0-windows\BLL.pdb
 C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\App\BLL\obj\Debug\net7.0-windows\ref\BLL.dll
 B:\CheckPoint\App\BLL\obj\Debug\net7.0-windows\BLL.csproj.AssemblyReference.cache
+C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\App\BLL\obj\Debug\net7.0-windows\BLL.csproj.AssemblyReference.cache

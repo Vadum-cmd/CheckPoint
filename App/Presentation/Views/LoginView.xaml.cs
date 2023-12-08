@@ -5,6 +5,7 @@
     using System.Windows;
     using System.Windows.Controls;
     using System.Windows.Input;
+    using System.Windows.Media.Animation;
     using MySqlConnector;
 
     /// <summary>
@@ -41,16 +42,35 @@
             // Authenticate user against MySQL database
             if (AuthenticateUser(login, password))
             {
+                // Show a success message
                 MessageBox.Show("Login successful!");
-                var mainView = new MainView();
-                mainView.Show();
+
+                // Fade out animation
+                var fadeOutAnimation = new DoubleAnimation
+                {
+                    From = 1.0,
+                    To = 0.0,
+                    Duration = TimeSpan.FromSeconds(0.5)
+                };
+
+                fadeOutAnimation.Completed += (s, _) =>
+                {
+                    // Animation completed, navigate to the next window
+                    var mainView = new MainView();
+                    mainView.Show();
+
+                    // Close the current login window
+                    this.Close();
+                };
+
+                this.BeginAnimation(UIElement.OpacityProperty, fadeOutAnimation);
             }
             else
             {
                 MessageBox.Show("Invalid username or password. Please try again.");
             }
-            
         }
+
         public bool AuthenticateUser(string login, string password)
         {
             try

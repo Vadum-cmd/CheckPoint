@@ -287,3 +287,6 @@ B:\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Views\UserReceiptsView.b
 B:\CheckPoint\App\Presentation\bin\Debug\net7.0-windows\Presentation.dll.config
 B:\CheckPoint\App\Presentation\bin\Debug\net7.0-windows\Castle.Core.dll
 B:\CheckPoint\App\Presentation\bin\Debug\net7.0-windows\Moq.dll
+C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\App\Presentation\bin\Debug\net7.0-windows\Presentation.dll.config
+C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\App\Presentation\bin\Debug\net7.0-windows\Castle.Core.dll
+C:\Users\vadum\Downloads\schoolwork\pe\CheckPoint\App\Presentation\bin\Debug\net7.0-windows\Moq.dll
