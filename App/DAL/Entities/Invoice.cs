@@ -7,12 +7,12 @@
     {
         public int Id { get; set; }
 
-        required public DateTime DateOf { get; set; }
+        public DateTime DateOf { get; set; }
 
-        required public string Provider { get; set; }
+        public string Provider { get; set; }
 
-        required public int TotalPrice { get; set; }
+        public int TotalPrice { get; set; }
 
-        required public IList<ProductInvoice> ProductInvoices { get; set; }
+        public IList<ProductInvoice> ProductInvoices { get; set; }
     }
 }

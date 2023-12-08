@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "3k4LJDGmm5xTl8TtxrN3No51P0nHAskYFV8sS7/viU3ViIzUaB8XSZPL7LYr4I3j8l0wSmZSByGWgCntqUl/EQ==",
+  "dgSpecHash": "qPsWLlOsb/pWO5PCAmCyZKuRTY+ARwqjg8ul1QhVC9ck8Ge906yW+k/dfsL4LglnSZOLV0ioHK3KKq9gD5xYpw==",
   "success": true,
   "projectFilePath": "B:\\CheckPoint\\App\\BLL\\BLL.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Rostyslav\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
+    "C:\\Users\\Rostyslav\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\Rostyslav\\.nuget\\packages\\moq\\4.20.70\\moq.4.20.70.nupkg.sha512",
+    "C:\\Users\\Rostyslav\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512",
+    "C:\\Users\\Rostyslav\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

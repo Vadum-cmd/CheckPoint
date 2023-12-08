@@ -285,3 +285,5 @@ B:\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Views\ProductsView.baml
 B:\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Views\SaleStatisticView.baml
 B:\CheckPoint\App\Presentation\obj\Debug\net7.0-windows\Views\UserReceiptsView.baml
 B:\CheckPoint\App\Presentation\bin\Debug\net7.0-windows\Presentation.dll.config
+B:\CheckPoint\App\Presentation\bin\Debug\net7.0-windows\Castle.Core.dll
+B:\CheckPoint\App\Presentation\bin\Debug\net7.0-windows\Moq.dll

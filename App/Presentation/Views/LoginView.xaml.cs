@@ -1,19 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-
-namespace Presentation.Views
+﻿namespace Presentation.Views
 {
+    using System;
+    using System.Configuration;
+    using System.Windows;
+    using System.Windows.Controls;
+    using System.Windows.Input;
+    using MySqlConnector;
+
     /// <summary>
     /// Interaction logic for LoginForm.xaml
     /// </summary>
@@ -42,8 +35,56 @@ namespace Presentation.Views
         }
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            var mainView = new MainView();
-            mainView.Show();
+            string login = txtUser.Text;
+            string password = txtPass.Password;
+
+            // Authenticate user against MySQL database
+            if (AuthenticateUser(login, password))
+            {
+                MessageBox.Show("Login successful!");
+                var mainView = new MainView();
+                mainView.Show();
+            }
+            else
+            {
+                MessageBox.Show("Invalid username or password. Please try again.");
+            }
+            
+        }
+        public bool AuthenticateUser(string login, string password)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(ConfigurationManager.ConnectionStrings["RostikConnection"].ConnectionString))
+                {
+                    connection.Open();
+
+                    // Use a stored procedure or parameterized query to prevent SQL injection
+                    string query = "SELECT COUNT(*) FROM employee WHERE Login = @login AND Password = @password";
+                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@login", login);
+                        cmd.Parameters.AddWithValue("@password", password); // Use hashed password in a real scenario
+
+                        int count = Convert.ToInt32(cmd.ExecuteScalar());
+
+                        return count > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle database connection or query errors
+                //txtError.Text = $"Error: {ex.Message}";
+                return false;
+            }
+        }
+
+        private void txtUser_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            // Your event handling logic here
+            TextBox textBox = (TextBox)sender;
+            string newText = textBox.Text;
         }
     }
 }

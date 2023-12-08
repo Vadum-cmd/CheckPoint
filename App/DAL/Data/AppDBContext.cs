@@ -6,6 +6,29 @@
     using Microsoft.EntityFrameworkCore;
     using Action = DAL.Entities.Action;
 
+    public interface IAppDBContext
+    { 
+    public DbSet<Employee> Employee { get; set; }
+
+    public DbSet<EmployeePermission> EmployeePermission { get; set; }
+
+    public DbSet<EmployeeSession> EmployeeSession { get; set; }
+
+    public DbSet<Receipt> Receipt { get; set; }
+
+    public DbSet<Invoice> Invoice { get; set; }
+
+    public DbSet<Product> Product { get; set; }
+
+    public DbSet<Entities.Action> Action { get; set; }
+
+    public DbSet<ProductInvoice> ProductInvoice { get; set; }
+
+    public DbSet<ProductReceipt> ProductReceipt { get; set; }
+
+    public DbSet<SaleStatistic> SaleStatistic { get; set; }
+    }
+
     public class AppDBContext : DbContext
     {
         public DbSet<Employee> Employee { get; set; }

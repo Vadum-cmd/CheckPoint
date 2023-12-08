@@ -8,11 +8,16 @@
 
     public static class UserQueries
     {
-        private static readonly AppDBContext dbContext;
+        private static AppDBContext dbContext;
 
         static UserQueries() 
         {
             dbContext = new AppDBContext();
+        }
+
+        public static void SetDbContext(AppDBContext mockDbContext)
+        {
+            dbContext = mockDbContext;
         }
 
         public static Invoice GetInvoiceById(int id)
